@@ -1,0 +1,157 @@
+html, body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #131518;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box {
+    position: absolute;
+    top:15%;
+    width:400px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    
+    border-radius: 20px;
+}
+.box .star{
+    margin:30px;
+    width:40px;
+    height:40px;
+    background-color: #262E38;
+    border-radius: 50%;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+ .title{
+    padding:0 30px;
+    font-size:28px;
+    color:white;
+}
+.description{
+    padding:0 30px;
+    color:#969FAD;
+}
+.box .number{
+    font-weight: 700;
+    border:0;
+    background-color: #262E38;
+    width:51px;
+    height:51px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#7C8798;
+    cursor:pointer;
+}
+ul{
+    gap:16px;
+    display: flex;
+}
+li{
+    list-style:none;
+}
+.box .number:hover {
+    background-color:#FC7614 ;
+    color:white;
+}
+.box .number:active{
+    background-color:#7C8798;
+    color:white;
+}
+
+.box .submit {
+    margin:30px;
+    width:90%;
+    border-radius: 20px;
+    border:0;
+    background-color:#FC7614 ;
+    color:white;
+    margin-top: 20px;
+    padding:11px;
+    cursor:pointer;
+}
+
+.box-thanks{
+    position: absolute;
+    top:15%;
+    width:350px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 20px;
+    padding:30px;
+}
+
+.box .submit:hover{
+    color: #FC7614;
+    background-color: white;
+}
+
+.thanks{
+    text-align: center;
+}
+.hidden{
+    display:none;
+}
+.thanks .score{
+    margin-left: 60px;
+    width:60%;
+    border-radius: 20px;
+    padding:5px 5px;
+    background-color: #262E38;
+    color:#FC7614;
+}
+
+@media  (max-width:410px) {
+    .box {
+        position: absolute;
+        top:15%;
+        width:300px;
+        background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+        
+        border-radius: 20px;
+    }
+    ul{
+        gap:10px;
+        display: flex;
+    }
+    .box .number{
+        font-weight: 700;
+        border:0;
+        background-color: #262E38;
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:#7C8798;
+        cursor:pointer;
+    }
+    .box .submit {
+        margin:15px;
+        width:90%;
+        border-radius: 20px;
+        border:0;
+        background-color:#FC7614 ;
+        color:white;
+        margin-top: 20px;
+        padding:11px;
+        cursor:pointer;
+    }
+    .box-thanks{
+        position: absolute;
+        top:15%;
+        width:300px;
+        background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+        border-radius: 20px;
+        padding:10px;
+    }
+}
